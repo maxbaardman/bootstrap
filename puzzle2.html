@@ -9,97 +9,97 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-dark text-white">
 
-<div>
+<div class="container p-0 bg-secondary">
     <div>
         <div>
-            <h1>Bootstrap Puzzle 2</h1>
+            <h1 class="float-right mr-3">Bootstrap Puzzle 2</h1>
         </div>
-        <div>
-            <a></a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="puzzle1.html">Puzzle 1</a></li>
-                <li><a href="puzzle2.html">Puzzle 2</a></li>
-                <li><a href="puzzle3.html">Puzzle 3</a></li>
-                <li><a href="bonus.html">Bonus</a></li>
+        <div class="dropdown">
+            <a class="btn ml-3 p-1 fas fa-bars fa-3x" type="button" data-toggle="dropdown"></a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-info" href="index.html">Home</a></li>
+                <li><a class="dropdown-item text-info" href="puzzle1.html">Puzzle 1</a></li>
+                <li><a class="dropdown-item text-info" href="puzzle2.html">Puzzle 2</a></li>
+                <li><a class="dropdown-item text-info" href="puzzle3.html">Puzzle 3</a></li>
+                <li><a class="dropdown-item text-info" href="bonus.html">Bonus</a></li>
             </ul>
         </div>
     </div>
 
-    <div>
-        <div>
-            <a href="img/img1.jpg" target="_blank">
-                <img src="img/img1.jpg">
-                <span>Bekijk Boom 1</span>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <a class="card carousel-item active text-center text-white" href="img/img1.jpg" target="_blank">
+                <img class="card-img w-100" src="img/img1.jpg">
+                <span class="card-img-overlay d-flex align-items-end justify-content-center h3 mb-4">Bekijk Boom 1</span>
             </a>
-            <a href="img/img2.jpg" target="_blank">
-                <img src="img/img2.jpg">
-                <span>Bekijk Boom 2</span>
+            <a class="carousel-item text-center text-white" href="img/img2.jpg" target="_blank">
+                <img class="w-100" src="img/img2.jpg">
+                <span class="card-img-overlay d-flex align-items-end justify-content-center h3 mb-4">Bekijk Boom 2</span>
             </a>
-            <a href="img/img3.jpg" target="_blank">
-                <img src="img/img3.jpg">
-                <span>Bekijk Boom 3</span>
+            <a class="carousel-item text-center text-white" href="img/img3.jpg" target="_blank">
+                <img class="w-100" src="img/img3.jpg">
+                <span class="card-img-overlay d-flex align-items-end justify-content-center h3 mb-4">Bekijk Boom 3</span>
             </a>
-            <a href="img/img4.jpg" target="_blank">
-                <img src="img/img4.jpg">
-                <span>Bekijk Boom 4</span>
+            <a class="carousel-item text-center text-white" href="img/img4.jpg" target="_blank">
+                <img class="w-100" src="img/img4.jpg">
+                <span class="card-img-overlay d-flex align-items-end justify-content-center h3 mb-4">Bekijk Boom 4</span>
             </a>
-            <a href="img/img5.jpg" target="_blank">
-                <img src="img/img5.jpg">
-                <span>Bekijk Boom 5</span>
+            <a class="carousel-item text-center text-white" href="img/img5.jpg" target="_blank">
+                <img class="w-100" src="img/img5.jpg">
+                <span class="card-img-overlay d-flex align-items-end justify-content-center h3 mb-4">Bekijk Boom 5</span>
             </a>
         </div>
     </div>
 
-    <div>
-        <div>
-            <div>
-                <img src="img/item1.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                <p id="item1text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item1text">Lees meer &hellip;</a></p>
+    <div class="row px-4 ">
+        <div class="col-xs-6 d-block row w-50 p-4 m-auto">
+            <div class="row bg-white p-2">
+                <img class="w-25 img-fluid rounded-start" src="img/item1.jpg" class="card-img">
+                <h2 class="w-75 card-header text-right bg-info">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item1text" class="collapse text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p class="ml-auto pt-2"><a class=" bg-info p-1 text-white" href="#item1text" data-toggle="collapse" href="#item1text">Lees meer &hellip;</a></p>
             </div>
-            <div>
-                <img src="img/item2.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                <p id="item2text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item2text">Lees meer &hellip;</a></p>
+            <div class="row bg-white p-2 mt-3 mb-3">
+                <img class="w-25 img-fluid rounded-start" src="img/item2.jpg">
+                <h2 class="w-75 text-right card-header bg-info">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item2text" class="collapse text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p class="ml-auto pt-2"><a class="bg-info p-1 text-white" href="#item2text" data-toggle="collapse" href="#item2text">Lees meer &hellip;</a></p>
             </div>
-            <div>
-                <img src="img/item3.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                <p id="item3text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item3text">Lees meer &hellip;</a></p>
+            <div class="row bg-white p-2">
+                <img class="w-25 img-fluid rounded-start" src="img/item3.jpg">
+                <h2 class="w-75 text-right card-header bg-info">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item3text" class="collapse text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p class="ml-auto pt-2"><a class="bg-info p-1 text-white" href="#item3text" data-toggle="collapse" href="#item3text">Lees meer &hellip;</a></p>
             </div>
         </div>
 
-        <div>
-            <div>
-                <img src="img/item4.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                <p id="item4text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item4text">Lees meer &hellip;</a></p>
+        <div class=" col-xs-6 w-50 p-4 m-auto">
+            <div class="row bg-white p-2">
+                <img class="w-25 img-fluid rounded-start" src="img/item4.jpg">
+                <h2 class="w-75 text-right card-header bg-info">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item4text" class="collapse text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p class="ml-auto pt-2"><a class="bg-info p-1 text-white" href="#item4text" data-toggle="collapse" href="#item4text">Lees meer &hellip;</a></p>
             </div>
-            <div>
-                <img src="img/item5.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                <p id="item5text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item5text">Lees meer &hellip;</a></p>
+            <div class="row bg-white p-2 mt-3 mb-3">
+                <img class="w-25 img-fluid rounded-start" src="img/item5.jpg">
+                <h2 class="w-75 text-right card-header bg-info">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item5text" class="collapse text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p class="ml-auto pt-2"><a class="bg-info p-1 text-white" href="#item5text" data-toggle="collapse" href="#item5text">Lees meer &hellip;</a></p>
             </div>
-            <div>
-                <img src="img/item6.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                <p id="item6text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item6text">Lees meer &hellip;</a></p>
+            <div class="row bg-white p-2">
+                <img class="w-25 img-fluid rounded-start"src="img/item6.jpg">
+                <h2 class="w-75 text-right card-header bg-info">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item6text" class="collapse text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p class="ml-auto pt-2"><a class="bg-info p-1 text-white" href="#item6text" data-toggle="collapse" href="#item6text">Lees meer &hellip;</a></p>
             </div>
         </div>
     </div>
 
-    <div>
-        <div>
-            <span>Created with:</span>
+    <div class="w-100">
+        <div class="float-right">
+            <span class="d-none">Created with:</span>
             <a href="https://getbootstrap.com/" target="_blank"><img src="img/logo-bootstrap.png"></a>
             <a href="https://fontawesome.com/" target="_blank"><img src="img/logo-fontawsome.png"></a>
             <a href="https://w3schools.com/" target="_blank"><img src="img/logo-w3schools.png"></a>
